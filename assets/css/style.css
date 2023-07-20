@@ -1,0 +1,367 @@
+@font-face {
+    font-family: 'FloodReg';
+    src: url("../fonts/Flood-Std-Regular.otf");
+}
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/Inter.ttf");
+}
+html {
+--color1 :#fff;
+--color2 :#000;
+--color3 :#354463;
+--color4 :#C1F7D5;
+--color5 :#d3d3d3;
+}
+body {
+    font-family: 'Inter';
+    background-color: var(--color5);
+    width: 376px;
+    margin: auto;
+}
+article {
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+h1 {
+    font-family: 'Inter';
+    color: var(--color3);
+}
+    h2 {
+        font-family: 'FloodReg';
+        font-size: 36px;
+        padding: 40px 0px 115px 40px;
+        color: var(--color1);
+    }
+        h3 {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--color5);
+        }
+            h4 {
+                font-size: 20px;
+                font-weight: 600;
+                color: var(--color3);
+            }
+                h5 {
+                    font-size: 12px;
+                    color: var(--color3);
+                }
+                     h6 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: rgb(109, 109, 109);
+                    } 
+.label {
+    position: relative;
+    z-index:3;
+    padding: 10px 15px 10px 15px;
+    width: 140px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:-15px;
+}
+    .dark {
+        background-color: var(--color3);
+    }
+        .light {
+            background-color: rgb(224, 228, 228);
+        }
+            .takeaction-title
+            {
+                    margin-top: -15px;
+            }
+/* ------------------- SECTION DU HEADER ------------------------- */ 
+header {
+    background-color: var(--color1);
+    padding: 35px 20px 10px 20px;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+    .website-title {
+        color: var(--color3);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        max-width: 140px;       
+    }
+        #navigation ul li a {
+            font-size: 14px;
+            line-height: 23px;
+        }
+            .btn-donate {
+                color: var(--color3);
+                font-weight: 600;
+                background-color: var(--color4);
+                padding: 8px 5px 8px 5px;
+                margin: 5px;
+                border-radius: 30px;
+                text-align: center;
+            }
+/* ------------------------- SECTION N°1 ------------------------- */ 
+/* 1st BLOC */
+    .stop-climat-img {
+        background-image: url("../img/section-1-bg.png");
+        padding-bottom: 40px;
+    }
+        .stop-climat-subcontainer {
+            background-color: var(--color1);
+            margin-left:30px;
+            margin-right:30px;
+            padding:30px;
+            text-align: center;
+        }
+            .stop-climat-subcontainer-text p {
+                color: var(--color3);
+                font-weight: 600;
+                line-height: 24px;
+                font-size: 18px;
+                margin-bottom: 30px;
+                padding: 0 12px 0 12px;
+            }
+                .stop-climat-subcontainer-readabout p {
+                    padding: 0 30px 0 30px;
+                    color: var(--color3);
+                    font-size: 10px;
+                    text-decoration: underline;
+                }
+/* 2nd BLOC */
+    .takeaction-container {
+        background-color: var(--color4);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;  
+    }
+        .takeaction-bloc {
+            padding: 40px 20px 30px 20px;
+            width: 140px;
+        }
+            .takeaction-bloc p {
+                color: slategray;
+                font-size: 14px;
+                line-height: 20px;
+                padding-top: 20px;
+            }
+                .stop-climat-takeaction-title {
+                    position: absolute;
+                }
+/* 3rd BLOC */
+    .whatwedo-container {
+        padding: 30px;
+        text-align: center;
+        background-color: var(--color3);
+    }
+        .whatwedo-title {
+            margin-top: 30px;
+        }
+            .whatwedo-hat p {
+                color: var(--color1);
+                font-weight: 600;
+                line-height: 24px;
+                font-size: 18px;
+                margin-bottom: 30px;
+                padding: 0 12px 0 12px;
+            }
+                .article-container {
+                    padding: 30px;
+                    background-color: var(--color1);
+                }
+                    .article-container img {
+                        margin-top: -50px;
+                        margin-bottom: 30px;
+                        width: 100%;
+                        height: auto;
+                    }
+                        .article-container h4 {
+                            color: var(--color3);
+                            margin-bottom: 30px;
+                        }
+                            .article-container p {
+                                color: var(--color3);
+                                font-size: 12px;
+                                line-height: 16px;
+                                padding: 20px;
+                            }
+                                .btn-readmore {
+                                    color: var(--color2);
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    background-color: var(--color4);
+                                    padding: 10px;
+                                    width: 180px;
+                                    border-radius: 30px;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                }
+/* 4th BLOC */
+    .climatchange-img {
+        background-image: url("/assets/img/bg-section-4.png");
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+        .climatchange-title {
+            padding-right:80px;
+        }
+        .climatchange-takeaction-btn {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--color3);
+            background-color: var(--color4);
+            width: 150px;
+            padding: 10px;
+            margin-left: 30px;
+            margin-bottom: 40px;
+            text-align: center;
+            border-radius: 50px;
+        }
+            .didyouknow-box {
+                display: flex;
+                flex-direction: row;   
+                margin: -15px 30px 30px 30px;
+                padding: 20px;
+                background-color: aliceblue;
+                margin-bottom: 40px;
+            }
+                .didyouknow-article-top h4 {
+                    display: inline-block;
+                    font-size: 16px;
+                    padding-top: 8px;
+                    margin-bottom: 20px;
+                    width: 80%;
+                }
+                    .didyouknow-article-top img:nth-child(1) {
+                        vertical-align: top;
+                    }
+                        .didyouknow-article-bot img:nth-child(2) {
+                            vertical-align: bottom;
+                        }
+                            .didyouknow-article-bot p {
+                                display: inline-block;
+                                font-size: 12px;
+                                line-height: 16px;
+                                width: 80%;
+                            }
+                                .stories-container {
+                                    text-align: center;
+                                }
+                                .stories-cite {
+                                    background-color: var(--color3);
+                                    padding: 40px 40px 40px 40px;
+                                    text-align: center;
+                                    margin: 30px 30px;   
+                                }
+                                    .stories-cite cite {
+                                        color: var(--color1);
+                                        font-size: 22px;
+                                        font-weight: 800;
+                                        line-height: 26px;
+                                    }
+                                        .stories-cite p  {
+                                            color: var(--color1);
+                                            padding-top: 20px;
+                                            font-size: 12px;
+                                            font-weight: 400;
+                                        }
+.savethefutur-container, article {
+    background-color: var(--color3);
+    text-align: center;
+}
+    .savethefutur-title h2 {
+        text-align: center;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+        .article-image {
+            text-align: center;
+        }
+            .article-subtitle h4 {
+                color: var(--color1);
+                margin-top: 20px;
+                padding-left: 45px;
+                padding-right: 45px;
+                font-size: 18px;
+                font-weight: 900;
+                line-height: 20px;
+            }
+                .article-text p {
+                    color: var(--color1);
+                    font-size: 12px;
+                    padding: 40px 45px 20px 45px;
+                    line-height: 16px;
+                }
+.newsletter-container {
+    text-align: left;
+    background-color: var(--color4);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+    .newsletter p{
+        color: var(--color3);
+        padding: 30px;
+    } 
+        .email {
+            padding: 20px;
+        }
+            .email input {
+                padding: 10px;
+                border: none;
+                border-radius: 50px;
+            }
+                .email button {
+                    background-color: var(--color3);
+                    border: none;
+                    color: var(--color4);
+                    padding: 10px;
+                    border-radius: 50px;
+                    width: 100px;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+footer {
+    background-color: var(--color1);
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-title {
+    color: var(--color3);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.footer-adress p {
+    color: var(--color2);
+    font-size: 14px;
+    line-height: 18px;
+}
+.footer-social ul,
+.footer-learn ul{
+    font-size: 14px;
+    text-decoration: underline;
+    line-height: 18px;
+}
+.case {
+    width:50%;
+    margin-bottom: 30px;
+    
+}
+.footer-title2 {
+    text-align: right;
+    margin-left: 140px;
+    
+}
+.footer-title2 h2 { 
+    color: var(--color3);
+    line-height: 40px;
+}
