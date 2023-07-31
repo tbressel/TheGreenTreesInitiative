@@ -364,14 +364,10 @@ section {
 
 /********* Section 4 *********/
 .section-4 {
-    animation-name: bg-section4m;
-    animation-duration: 30s;
-    animation-fill-mode:both;
-    animation-iteration-count: infinite;
+  
     background-image: url('../img/substitution/Image_section2_NORMAL.jpg');
     background-repeat: no-repeat;
-    background-size: 300%;
-    background-position: center;
+    background-size: cover;
     padding: 40px 30px;
 }
 
@@ -878,22 +874,7 @@ footer div div {
         background-size: 100%;}
     }
         
-@keyframes bg-section4m {
-    0% {background-position-x: 0px;
-        background-position-y: 0px;
-        background-size: 300%;}
 
-    50% {background-position-y: -40px;
-        background-position-x: -35px}
-
-    75% {background-size: 390%;
-        background-position-x: -10px;
-        background-position-y: -5px;}
-
-    100% {background-position-x: 0px;
-        background-position-y: 0px;
-        background-size: 300%;}
-    }
         
 
 @keyframes bg-section1 {
