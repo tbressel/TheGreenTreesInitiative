@@ -25,6 +25,8 @@ body {
     font-family: Inter, Arial, sans-serif;
     font-size: var(--text-default);
     min-width: 415px;
+    position: relative;
+    top:120px;
    
 }
 
@@ -160,6 +162,7 @@ p {
 
 /********* CTA *********/
 .cta {
+    position: relative;
     font-size: 16px;
     font-weight: bold;
     text-transform: capitalize;
@@ -301,6 +304,12 @@ p {
 
 /********* Header *********/
 header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    opacity: 90%;
+    top:0;
+
     background-color: var(--white);
     margin-bottom: 20px;
     transition: 800ms ease-in-out;
@@ -315,11 +324,58 @@ header .slogan {
     line-height: 24px;
 }
 
+
+#menu_burger {
+    position:fixed;
+    z-index: 6;
+    top : -10px;
+    right: 0;
+    width: 40px;
+    height: 39px;
+    margin: 30px 20px 20px 20px;
+    border: #000 2px solid;
+    border-radius: 5px;
+}
+#menu_burger .line {
+    border: #000 2px solid;
+    margin: 6.5px 5px 5px 5px;
+}
+
+
+#don {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   top: -120px;
+}
+
 .content-header {
     display: flex;
     justify-content: space-between;
     padding: 0px 32px;
     transition: 800ms ease-in-out;
+}
+
+.navigation {
+    position: absolute;
+    z-index: -7;
+    width: 100%;
+    background-color: var(--white);
+    top : -200px;
+    left: 0px;
+    padding: 0px 20px 40px 15px;
+    transition: 300ms ease-in-out;
+ 
+}
+
+.menu_on {
+    top : 120px;
+    transition: 300ms ease-in-out;
+}
+
+.navigation ul li {
+    padding: 0px 20px 20px 20px;
 }
 
 nav ul{
@@ -488,31 +544,45 @@ min-width : 300px;
         width: 30%;
     }
 
+    #menu_burger {
+        display: none;
+    }
+    #don {
+        position: static;
+    }
+
+    .navigation {
+        position: static;
+        z-index: 2;
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    .navigation ul li {
+        padding: 0; 
+    }
+    
     nav {
         width: 100%;
         display: flex;
         justify-content: space-between;
         transition: 800ms ease-in-out;
          }
-
-
-
-        
+       
     nav ul {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-
         nav ul li a {
             transition: 200ms ease-in-out;
         }
-
     nav ul li a:hover {
         font-size: 1.2rem;
         transition: 300ms ease-in-out;
     }
+
 
     .cta.green {
         width: max-content;
