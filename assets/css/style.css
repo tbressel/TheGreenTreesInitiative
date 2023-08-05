@@ -381,7 +381,7 @@ header .slogan {
 nav ul{
     display: flex;
     flex-direction: column;
-    padding: 32px 0 0 0;
+   
 }
 nav ul li {
     padding:5px;
@@ -560,6 +560,7 @@ min-width : 300px;
     
     .navigation ul li {
         padding: 0; 
+        min-width: fit-content;
     }
     
     nav {
@@ -574,6 +575,7 @@ min-width : 300px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
         nav ul li a {
             transition: 200ms ease-in-out;
@@ -588,6 +590,7 @@ min-width : 300px;
         width: max-content;
         padding-left: 20px;
         padding-right: 20px;
+        margin-top: 40px;
     }
 
 /* ----------------------------------------------------------------------------------------------*/
